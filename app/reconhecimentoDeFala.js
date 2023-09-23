@@ -13,7 +13,7 @@ function onSpeak(e) {
   chute = e.results[0][0].transcript
   exibeChuteNaTela(chute)
   verificaSeOChutePossuiUmValorValido(chute)
-  corrigeNumeros(chute)
+
 }
 
 function exibeChuteNaTela(chute) {
@@ -25,27 +25,5 @@ function exibeChuteNaTela(chute) {
 
 recognition.addEventListener('end', () => recognition.start())
 
-const numeros = {
-    'zero zero': 0,
-    '00': 0,
-    '01': 1,
-    'um': 1,
-    'dois': 2,
-    'três': 3,
-    'quatro': 4,
-    'cinco': 5,
-    'seis': 6,
-    'sete': 7,
-    'oito': 8,
-    'nove': 9,
-    'dez': 10
- }
- 
- const corrigeNumeros = (palavra) => {
-    for(numero in numeros){
-       if(palavra === numero){
-          palavra = numeros[numero];   
-       }         
-    }
-    return palavra;
+
  }
