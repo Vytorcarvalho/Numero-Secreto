@@ -1,3 +1,3 @@
 # Numero-Secreto
 
-https://numero-secreto-lufltgi3y-vytorcarvalho.vercel.app/
+https://numero-secreto-gvxzpkxfu-vytorcarvalho.vercel.app/
