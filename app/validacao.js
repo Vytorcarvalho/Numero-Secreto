@@ -51,13 +51,13 @@ function verificaSeOChutePossuiUmValorValido (chute) {
         'dez': 10
      }
      
-     const corrigeNumeros = (palavra) => {
+     const corrigeNumeros = (chute) => {
         for(numero in numeros){
-           if(palavra === numero){
-              palavra = numeros[numero];   
+           if(chute === numero){
+              chute = numeros[numero];   
            }         
         }
-        return palavra;
+        return chute;
     }
 }   
 function chuteForInvalido(numero) {
