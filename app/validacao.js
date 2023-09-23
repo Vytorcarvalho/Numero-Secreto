@@ -35,7 +35,7 @@ function verificaSeOChutePossuiUmValorValido (chute) {
         <div>O número secreto e menor <i class="fa-solid fa-arrow-down-long"></i></div>
         `
     }else{
-        `
+        elementoChute.innerHTML+= `
         <div>O número secreto e maior <i class="fa-solid fa-arrow-up-long"></i></div>
         `
     }
