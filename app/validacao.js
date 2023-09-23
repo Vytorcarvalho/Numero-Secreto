@@ -26,17 +26,15 @@ function verificaSeOChutePossuiUmValorValido (chute) {
         document.body.innerHTML = `
         <h2>Você acertou!</h2>
         <h3>O número secreto é ${numeroSecreto}</h3>
-
         <button id = "jogar-novamente" class = "btn-jogar">Jogar novamente</button>
         `
     }
     else if (numero > numeroSecreto) {
-        elementoChute.innerHTML += `
-        <div>O número secreto e menor <i class="fa-solid fa-arrow-down-long"></i></div>
-        `
+        elementoChute.innerHTML += ` <div>
+        O número secreto e menor <i class="fa-solid fa-arrow-down-long"></i></div>`
     }else{
-        elementoChute.innerHTML += `
-        <div>O número secreto e maior <i class="fa-solid fa-arrow-up-long"></i></div>
+        elementoChute.innerHTML += `<div>
+        O número secreto e maior <i class="fa-solid fa-arrow-up-long"></i></div>
         `
     }
 }
@@ -56,27 +54,3 @@ document.body.addEventListener('click', (e)=>{
   }  
 })
 
-const numeros = {
-    'zero zero': 0,
-    '00': 0,
-    '01': 1,
-    'um': 1,
-    'dois': 2,
-    'três': 3,
-    'quatro': 4,
-    'cinco': 5,
-    'seis': 6,
-    'sete': 7,
-    'oito': 8,
-    'nove': 9,
-    'dez': 10
- }
- 
- const corrigeNumeros = (palavra) => {
-    for(numero in numeros){
-       if(palavra === numero){
-          palavra = numeros[numero];   
-       }         
-    }
-    return palavra;
- }
