@@ -1,3 +1,3 @@
 # Numero-Secreto
 
-https://numero-secreto-48ipul8nu-vytorcarvalho.vercel.app/
+https://numero-secreto-3c4hyk1ww-vytorcarvalho.vercel.app/
