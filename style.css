@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root{
+    ---font-family: 'Merriweather', serif;
+    ---bg-color: #707070;
+    ---primary-color: #FFFFFF;
+
+}
+
+body{
+    background-color: var(---bg-color);
+    color: var(---primary-color);
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  
+    
+}
+h1{
+    font-size: 4em; 
+}
+h2{
+    font-size: 4em;
+}
+h3{
+    font-size: 2em;
+    margin-top: 10px;
+}
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.box {
+    border: 1px solid var(---primary-color);display: inline-block;
+    padding: 10px;
+    font-size: 4em;
+    margin: 20px;
+   
+}
+.btn-jogar{
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    
+}
