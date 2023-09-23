@@ -31,11 +31,11 @@ function verificaSeOChutePossuiUmValorValido (chute) {
         `
     }
     else if (numero > numeroSecreto) {
-        elementoChute.innerHTML+= `
+        elementoChute.innerHTML += `
         <div>O número secreto e menor <i class="fa-solid fa-arrow-down-long"></i></div>
         `
     }else{
-        elementoChute.innerHTML+= `
+        elementoChute.innerHTML += `
         <div>O número secreto e maior <i class="fa-solid fa-arrow-up-long"></i></div>
         `
     }
@@ -55,3 +55,28 @@ document.body.addEventListener('click', (e)=>{
     
   }  
 })
+
+const numeros = {
+    'zero zero': 0,
+    '00': 0,
+    '01': 1,
+    'um': 1,
+    'dois': 2,
+    'três': 3,
+    'quatro': 4,
+    'cinco': 5,
+    'seis': 6,
+    'sete': 7,
+    'oito': 8,
+    'nove': 9,
+    'dez': 10
+ }
+ 
+ const corrigeNumeros = (palavra) => {
+    for(numero in numeros){
+       if(palavra === numero){
+          palavra = numeros[numero];   
+       }         
+    }
+    return palavra;
+ }
